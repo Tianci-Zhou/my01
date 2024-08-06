@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+  background-color: #000;
+  color: #fff;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.TXbox {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.friendBox {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  padding: 2rem 0rem;
+}
+.r_box {
+  width: 6rem;
+  padding: 0.2rem 0rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.r_box h1 {
+  margin-bottom: 0.6rem;
+  animation: breathing 3s infinite ease-in-out;
+}
+.item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item li {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.26rem;
+  margin-bottom: 0.2rem;
+}
+.item li a div {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 auto;
+  margin-bottom: 0.2rem;
+}
+
+@keyframes breathing {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+}
